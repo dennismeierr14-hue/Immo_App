@@ -138,5 +138,4 @@ struct DashboardView: View {
 
 #Preview {
     DashboardView(viewModel: InvestmentViewModel())
-}cd ~/Desktop
-
+}
