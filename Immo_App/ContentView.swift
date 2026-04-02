@@ -1,80 +1,36 @@
-//
-//  ContentView.swift
-//  Immo_App
-//
-//  Created by Dennis Meier on 26.03.26.
-//
-
 import SwiftUI
-import SwiftData
 
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
-
+    
+    @State private var viewModel = InvestmentViewModel()
+    
     var body: some View {
-        NavigationViewWrapper {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-                    }
+        TabView {
+            
+            DashboardView(viewModel: viewModel)
+                .tabItem {
+                    Label("Dashboard", systemImage: "chart.bar.fill")
                 }
-                .onDelete(perform: deleteItems)
-            }
-#if os(macOS)
-            .navigationSplitViewColumnWidth(min: 180, ideal: 200)
-#endif
-            .toolbar {
-#if os(iOS)
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
+            
+            PropertyInputView(viewModel: viewModel)
+                .tabItem {
+                    Label("Objekt", systemImage: "building.2.fill")
                 }
-#endif
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
+            
+            CostInputView(viewModel: viewModel)
+                .tabItem {
+                    Label("Kosten", systemImage: "eurosign.circle.fill")
                 }
-            }
+            
+            FinancingView(viewModel: viewModel)
+                .tabItem {
+                    Label("Finanz.", systemImage: "banknote.fill")
+                }
+            
+            ProjectionView(viewModel: viewModel)
+                .tabItem {
+                    Label("Zukunft", systemImage: "clock.arrow.circlepath")
+                }
         }
     }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
-            }
-        }
-    }
-}
-
-fileprivate struct NavigationViewWrapper<Content: View>: View {
-    let content: () -> Content
-
-    var body: some View {
-#if os(macOS)
-        NavigationSplitView {
-            content()
-        } detail: {
-            Text("Select an item")
-        }
-#else
-        content()
-#endif
-    }
-}
-
-#Preview {
-    ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
 }
