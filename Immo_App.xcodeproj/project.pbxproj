@@ -6,30 +6,68 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7A70B24B2F7EF2AF0099FB20 /* ProjectionCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A70B24A2F7EF2AF0099FB20 /* ProjectionCalculator.swift */; };
+		7A70B24D2F7EF37C0099FB20 /* ProjectionInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A70B24C2F7EF37C0099FB20 /* ProjectionInput.swift */; };
+		7A70B24F2F7EF3AE0099FB20 /* ProjectionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A70B24E2F7EF3AE0099FB20 /* ProjectionResult.swift */; };
+		7A70B2512F7EFFE90099FB20 /* ProjectionScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A70B2502F7EFFE90099FB20 /* ProjectionScenario.swift */; };
+		7A70B2532F7F00140099FB20 /* ProjectionScenarioBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A70B2522F7F00140099FB20 /* ProjectionScenarioBuilder.swift */; };
+		7A70B2552F7F007B0099FB20 /* ProjectionScenarioEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A70B2542F7F007B0099FB20 /* ProjectionScenarioEvaluator.swift */; };
+		7A70B2572F7F010D0099FB20 /* ProjectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A70B2562F7F010D0099FB20 /* ProjectionViewModel.swift */; };
+		7A70B2592F7F08FB0099FB20 /* ProjectionYearEntry.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A70B2582F7F08FB0099FB20 /* ProjectionYearEntry.swift.swift */; };
+		7A70B25B2F7F09840099FB20 /* ProjectionEquityChart.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A70B25A2F7F09840099FB20 /* ProjectionEquityChart.swift.swift */; };
+		7A70B25D2F7F0A0E0099FB20 /* ProjectionMetricChart.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A70B25C2F7F0A0E0099FB20 /* ProjectionMetricChart.swift.swift */; };
+		7A70B25F2F7F115D0099FB20 /* RentAndReservesView.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A70B25E2F7F115D0099FB20 /* RentAndReservesView.swift.swift */; };
+		7A802E5B2F79C61500A68385 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A802E552F79C61500A68385 /* ContentView.swift */; };
+		7A802E5C2F79C61500A68385 /* Immo_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A802E572F79C61500A68385 /* Immo_AppApp.swift */; };
+		7A802E5D2F79C61500A68385 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A802E592F79C61500A68385 /* Item.swift */; };
+		7A802E5E2F79C61500A68385 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A802E542F79C61500A68385 /* Assets.xcassets */; };
+		7A802E622F79C67800A68385 /* Loaninput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A802E612F79C67800A68385 /* Loaninput.swift */; };
+		7A802E642F79C71F00A68385 /* investmentInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A802E632F79C71F00A68385 /* investmentInput.swift */; };
+		7A802E662F79C76C00A68385 /* InvestmentResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A802E652F79C76C00A68385 /* InvestmentResult.swift */; };
+		7A802E6A2F79C83F00A68385 /* InvestmentCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A802E692F79C83F00A68385 /* InvestmentCalculator.swift */; };
+		7A802E6D2F79C8CF00A68385 /* InvestmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A802E6C2F79C8CF00A68385 /* InvestmentViewModel.swift */; };
+		7A802E712F79CA5800A68385 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A802E702F79CA5800A68385 /* DashboardView.swift */; };
+		7A802E732F79CB0300A68385 /* PropertyInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A802E722F79CB0300A68385 /* PropertyInputView.swift */; };
+		7A802E752F79CB6500A68385 /* CostInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A802E742F79CB6500A68385 /* CostInputView.swift */; };
+		7A802E772F79CC1200A68385 /* FinancingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A802E762F79CC1200A68385 /* FinancingView.swift */; };
+		7A802E792F79CC2F00A68385 /* ProjectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A802E782F79CC2F00A68385 /* ProjectionView.swift */; };
+		7A802E7B2F7C577A00A68385 /* MetricCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A802E7A2F7C577A00A68385 /* MetricCard.swift */; };
+		7A802E7D2F7C671700A68385 /* AppFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A802E7C2F7C671700A68385 /* AppFormatter.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		7A70B24A2F7EF2AF0099FB20 /* ProjectionCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectionCalculator.swift; sourceTree = "<group>"; };
+		7A70B24C2F7EF37C0099FB20 /* ProjectionInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectionInput.swift; sourceTree = "<group>"; };
+		7A70B24E2F7EF3AE0099FB20 /* ProjectionResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectionResult.swift; sourceTree = "<group>"; };
+		7A70B2502F7EFFE90099FB20 /* ProjectionScenario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectionScenario.swift; sourceTree = "<group>"; };
+		7A70B2522F7F00140099FB20 /* ProjectionScenarioBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectionScenarioBuilder.swift; sourceTree = "<group>"; };
+		7A70B2542F7F007B0099FB20 /* ProjectionScenarioEvaluator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectionScenarioEvaluator.swift; sourceTree = "<group>"; };
+		7A70B2562F7F010D0099FB20 /* ProjectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectionViewModel.swift; sourceTree = "<group>"; };
+		7A70B2582F7F08FB0099FB20 /* ProjectionYearEntry.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectionYearEntry.swift.swift; sourceTree = "<group>"; };
+		7A70B25A2F7F09840099FB20 /* ProjectionEquityChart.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectionEquityChart.swift.swift; sourceTree = "<group>"; };
+		7A70B25C2F7F0A0E0099FB20 /* ProjectionMetricChart.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectionMetricChart.swift.swift; sourceTree = "<group>"; };
+		7A70B25E2F7F115D0099FB20 /* RentAndReservesView.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentAndReservesView.swift.swift; sourceTree = "<group>"; };
 		7A802E362F75E1AE00A68385 /* Immo_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Immo_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A802E542F79C61500A68385 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A802E552F79C61500A68385 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7A802E562F79C61500A68385 /* Immo_App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Immo_App.entitlements; sourceTree = "<group>"; };
+		7A802E572F79C61500A68385 /* Immo_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Immo_AppApp.swift; sourceTree = "<group>"; };
+		7A802E582F79C61500A68385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A802E592F79C61500A68385 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		7A802E612F79C67800A68385 /* Loaninput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loaninput.swift; sourceTree = "<group>"; };
+		7A802E632F79C71F00A68385 /* investmentInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = investmentInput.swift; sourceTree = "<group>"; };
+		7A802E652F79C76C00A68385 /* InvestmentResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentResult.swift; sourceTree = "<group>"; };
+		7A802E692F79C83F00A68385 /* InvestmentCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentCalculator.swift; sourceTree = "<group>"; };
+		7A802E6C2F79C8CF00A68385 /* InvestmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentViewModel.swift; sourceTree = "<group>"; };
+		7A802E702F79CA5800A68385 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		7A802E722F79CB0300A68385 /* PropertyInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyInputView.swift; sourceTree = "<group>"; };
+		7A802E742F79CB6500A68385 /* CostInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostInputView.swift; sourceTree = "<group>"; };
+		7A802E762F79CC1200A68385 /* FinancingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancingView.swift; sourceTree = "<group>"; };
+		7A802E782F79CC2F00A68385 /* ProjectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectionView.swift; sourceTree = "<group>"; };
+		7A802E7A2F7C577A00A68385 /* MetricCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricCard.swift; sourceTree = "<group>"; };
+		7A802E7C2F7C671700A68385 /* AppFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		7A802E432F75E1AF00A68385 /* Exceptions for "Immo_App" folder in "Immo_App" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 7A802E352F75E1AE00A68385 /* Immo_App */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		7A802E382F75E1AE00A68385 /* Immo_App */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				7A802E432F75E1AF00A68385 /* Exceptions for "Immo_App" folder in "Immo_App" target */,
-			);
-			path = Immo_App;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		7A802E332F75E1AE00A68385 /* Frameworks */ = {
@@ -45,7 +83,7 @@
 		7A802E2D2F75E1AE00A68385 = {
 			isa = PBXGroup;
 			children = (
-				7A802E382F75E1AE00A68385 /* Immo_App */,
+				7A802E5A2F79C61500A68385 /* Immo_App */,
 				7A802E372F75E1AE00A68385 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +94,82 @@
 				7A802E362F75E1AE00A68385 /* Immo_App.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		7A802E5A2F79C61500A68385 /* Immo_App */ = {
+			isa = PBXGroup;
+			children = (
+				7A802E6F2F79C94500A68385 /* Components */,
+				7A802E6E2F79C91B00A68385 /* Views */,
+				7A802E6B2F79C87300A68385 /* ViewModels */,
+				7A802E682F79C7ED00A68385 /* Services */,
+				7A802E602F79C63000A68385 /* Models */,
+				7A802E542F79C61500A68385 /* Assets.xcassets */,
+				7A802E552F79C61500A68385 /* ContentView.swift */,
+				7A802E562F79C61500A68385 /* Immo_App.entitlements */,
+				7A802E572F79C61500A68385 /* Immo_AppApp.swift */,
+				7A802E582F79C61500A68385 /* Info.plist */,
+				7A802E592F79C61500A68385 /* Item.swift */,
+			);
+			path = Immo_App;
+			sourceTree = "<group>";
+		};
+		7A802E602F79C63000A68385 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7A802E612F79C67800A68385 /* Loaninput.swift */,
+				7A802E632F79C71F00A68385 /* investmentInput.swift */,
+				7A802E652F79C76C00A68385 /* InvestmentResult.swift */,
+				7A70B24C2F7EF37C0099FB20 /* ProjectionInput.swift */,
+				7A70B24E2F7EF3AE0099FB20 /* ProjectionResult.swift */,
+				7A70B2502F7EFFE90099FB20 /* ProjectionScenario.swift */,
+				7A70B2582F7F08FB0099FB20 /* ProjectionYearEntry.swift.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7A802E682F79C7ED00A68385 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7A802E692F79C83F00A68385 /* InvestmentCalculator.swift */,
+				7A802E7C2F7C671700A68385 /* AppFormatter.swift */,
+				7A70B24A2F7EF2AF0099FB20 /* ProjectionCalculator.swift */,
+				7A70B2522F7F00140099FB20 /* ProjectionScenarioBuilder.swift */,
+				7A70B2542F7F007B0099FB20 /* ProjectionScenarioEvaluator.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7A802E6B2F79C87300A68385 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7A802E6C2F79C8CF00A68385 /* InvestmentViewModel.swift */,
+				7A70B2562F7F010D0099FB20 /* ProjectionViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7A802E6E2F79C91B00A68385 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7A802E702F79CA5800A68385 /* DashboardView.swift */,
+				7A802E722F79CB0300A68385 /* PropertyInputView.swift */,
+				7A802E742F79CB6500A68385 /* CostInputView.swift */,
+				7A802E762F79CC1200A68385 /* FinancingView.swift */,
+				7A802E782F79CC2F00A68385 /* ProjectionView.swift */,
+				7A70B25E2F7F115D0099FB20 /* RentAndReservesView.swift.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7A802E6F2F79C94500A68385 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				7A802E7A2F7C577A00A68385 /* MetricCard.swift */,
+				7A70B25A2F7F09840099FB20 /* ProjectionEquityChart.swift.swift */,
+				7A70B25C2F7F0A0E0099FB20 /* ProjectionMetricChart.swift.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,9 +186,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				7A802E382F75E1AE00A68385 /* Immo_App */,
 			);
 			name = Immo_App;
 			packageProductDependencies = (
@@ -122,6 +233,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A802E5E2F79C61500A68385 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +244,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A70B2512F7EFFE90099FB20 /* ProjectionScenario.swift in Sources */,
+				7A802E642F79C71F00A68385 /* investmentInput.swift in Sources */,
+				7A70B2532F7F00140099FB20 /* ProjectionScenarioBuilder.swift in Sources */,
+				7A70B25D2F7F0A0E0099FB20 /* ProjectionMetricChart.swift.swift in Sources */,
+				7A802E7D2F7C671700A68385 /* AppFormatter.swift in Sources */,
+				7A70B24D2F7EF37C0099FB20 /* ProjectionInput.swift in Sources */,
+				7A70B25B2F7F09840099FB20 /* ProjectionEquityChart.swift.swift in Sources */,
+				7A802E622F79C67800A68385 /* Loaninput.swift in Sources */,
+				7A802E5B2F79C61500A68385 /* ContentView.swift in Sources */,
+				7A802E6A2F79C83F00A68385 /* InvestmentCalculator.swift in Sources */,
+				7A802E712F79CA5800A68385 /* DashboardView.swift in Sources */,
+				7A802E7B2F7C577A00A68385 /* MetricCard.swift in Sources */,
+				7A802E792F79CC2F00A68385 /* ProjectionView.swift in Sources */,
+				7A802E662F79C76C00A68385 /* InvestmentResult.swift in Sources */,
+				7A802E752F79CB6500A68385 /* CostInputView.swift in Sources */,
+				7A802E6D2F79C8CF00A68385 /* InvestmentViewModel.swift in Sources */,
+				7A802E5C2F79C61500A68385 /* Immo_AppApp.swift in Sources */,
+				7A70B2552F7F007B0099FB20 /* ProjectionScenarioEvaluator.swift in Sources */,
+				7A70B24B2F7EF2AF0099FB20 /* ProjectionCalculator.swift in Sources */,
+				7A802E732F79CB0300A68385 /* PropertyInputView.swift in Sources */,
+				7A802E772F79CC1200A68385 /* FinancingView.swift in Sources */,
+				7A70B25F2F7F115D0099FB20 /* RentAndReservesView.swift.swift in Sources */,
+				7A802E5D2F79C61500A68385 /* Item.swift in Sources */,
+				7A70B24F2F7EF3AE0099FB20 /* ProjectionResult.swift in Sources */,
+				7A70B2572F7F010D0099FB20 /* ProjectionViewModel.swift in Sources */,
+				7A70B2592F7F08FB0099FB20 /* ProjectionYearEntry.swift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

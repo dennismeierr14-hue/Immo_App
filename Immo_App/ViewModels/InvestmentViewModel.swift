@@ -1,18 +1,16 @@
 import Foundation
-import Observation
+import Combine
 
-@Observable
-final class InvestmentViewModel {
+final class InvestmentViewModel: ObservableObject {
     
-    var input: InvestmentInput
-    var result: InvestmentResult
+    @Published var input: InvestmentInput
+    @Published var result: InvestmentResult
     
     private let calculator = InvestmentCalculator()
     
-    init() {
-        let initialInput = InvestmentInput()
-        self.input = initialInput
-        self.result = calculator.calculate(input: initialInput)
+    init(input: InvestmentInput = InvestmentInput()) {
+        self.input = input
+        self.result = calculator.calculate(input: input)
     }
     
     func recalculate() {

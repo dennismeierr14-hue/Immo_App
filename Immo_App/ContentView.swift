@@ -2,35 +2,39 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var viewModel = InvestmentViewModel()
+    @StateObject private var viewModel = InvestmentViewModel()
     
     var body: some View {
         TabView {
             
-            DashboardView(viewModel: viewModel)
-                .tabItem {
-                    Label("Dashboard", systemImage: "chart.bar.fill")
-                }
-            
             PropertyInputView(viewModel: viewModel)
                 .tabItem {
-                    Label("Objekt", systemImage: "building.2.fill")
+                    Label("Objekt", systemImage: "house")
                 }
             
-            CostInputView(viewModel: viewModel)
+            RentAndReservesView(viewModel: viewModel)
                 .tabItem {
-                    Label("Kosten", systemImage: "eurosign.circle.fill")
+                    Label("Miete", systemImage: "eurosign.circle")
+                }
+            
+            DashboardView(viewModel: viewModel)
+                .tabItem {
+                    Label("Dashboard", systemImage: "chart.bar")
                 }
             
             FinancingView(viewModel: viewModel)
                 .tabItem {
-                    Label("Finanz.", systemImage: "banknote.fill")
+                    Label("Finanzierung", systemImage: "banknote")
                 }
             
             ProjectionView(viewModel: viewModel)
                 .tabItem {
-                    Label("Zukunft", systemImage: "clock.arrow.circlepath")
+                    Label("Zukunft", systemImage: "chart.line.uptrend.xyaxis")
                 }
         }
     }
+}
+
+#Preview {
+    ContentView()
 }

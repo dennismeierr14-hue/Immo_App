@@ -7,13 +7,22 @@ struct InvestmentInput {
     var objectName: String = "Mein Investment"
     
     var purchasePrice: Double = 3_000_000
-    var additionalPurchaseCosts: Double = 0
     var livingArea: Double = 2300
+    
+    var notaryRate: Double = 0.015
+    var landRegistryRate: Double = 0.005
+    var realEstateTransferTaxRate: Double = 0.05
+    var brokerCommissionRate: Double = 0.0357
+    
+    var depreciationRate: Double = 0.02
+    var buildingValueShare: Double = 0.80
+    
+    var holdingPeriodYears: Int = 10
+    
+    // MARK: - Miete
     
     var annualNetColdRent: Double = 204_996
     var annualOtherIncome: Double = 0
-    
-    var holdingPeriodYears: Int = 10
     
     // MARK: - Kosten (monatlich)
     
@@ -42,7 +51,6 @@ struct InvestmentInput {
     // MARK: - Steuern & Zukunft
     
     var personalTaxRate: Double = 0.42
-    var annualDepreciation: Double = 96_300
     
     var annualRentGrowthRate: Double = 0.02
     var annualValueGrowthRate: Double = 0.02

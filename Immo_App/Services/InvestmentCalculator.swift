@@ -4,8 +4,20 @@ final class InvestmentCalculator {
     
     func calculate(input: InvestmentInput) -> InvestmentResult {
         
+        // Kaufnebenkosten
+        let notaryCosts = input.purchasePrice * input.notaryRate
+        let landRegistryCosts = input.purchasePrice * input.landRegistryRate
+        let realEstateTransferTax = input.purchasePrice * input.realEstateTransferTaxRate
+        let brokerCommission = input.purchasePrice * input.brokerCommissionRate
+        
+        let additionalPurchaseCosts =
+            notaryCosts +
+            landRegistryCosts +
+            realEstateTransferTax +
+            brokerCommission
+        
         // Gesamtkapital
-        let totalCapitalRequired = input.purchasePrice + input.additionalPurchaseCosts
+        let totalCapitalRequired = input.purchasePrice + additionalPurchaseCosts
         
         // Rendite & Faktor
         let annualRent = input.annualNetColdRent
@@ -56,9 +68,12 @@ final class InvestmentCalculator {
             - monthlyInterest
             - monthlyRepayment
         
-        // Steuern
-        let monthlyDepreciation = input.annualDepreciation / 12
+        // AfA
+        let depreciationBase = input.purchasePrice * input.buildingValueShare
+        let annualDepreciation = depreciationBase * input.depreciationRate
+        let monthlyDepreciation = annualDepreciation / 12
         
+        // Steuern
         let monthlyTaxableCashflow =
             monthlyIncome
             - nonAllocableCostsPerMonth
